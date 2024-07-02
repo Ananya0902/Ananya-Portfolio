@@ -31,7 +31,7 @@
 
 .cursor-trail {
   position: absolute;
-  width: 350px;
+  width: 35px;
   height: 35px;
   background-color: #932c9a; 
   mix-blend-mode: screen; 
