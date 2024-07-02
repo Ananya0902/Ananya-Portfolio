@@ -1,32 +1,52 @@
 .custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 9999;
-  }
-  
-  .cursor-neon {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #e955b0; /* Neon pink color */
-    mix-blend-mode: screen; /* Neon effect */
-    transition: transform 0.5s ease-out;
-    z-index: 99999;
-    transform: translate(-50%, -50%);
-  }
-  
-  .cursor-trail {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #FF6EC7; /* Neon pink color */
-    mix-blend-mode: screen; /* Neon effect */
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-  }
-  
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-neon {
+  position: absolute;
+  width: 40px;
+  height: 40px; 
+  background-color: #491a4e; 
+  mix-blend-mode: screen;
+  transition: transform 0.5s ease-out;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); 
+}
+
+.cursor-trail {
+  position: absolute;
+  width: 350px;
+  height: 35px;
+  background-color: #932c9a; 
+  mix-blend-mode: screen; 
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); 
+}
